@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JARVIS Tech Intro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hud-container">
+
+<!-- TERMINAL BACKGROUND -->
+<div class="terminal-bg">
+  <pre id="terminal-output"></pre>
+</div>
+<!-- NETWORK CONNECTIONS -->
+<div class="network-panel">
+  <h3>NETWORK ANALYSIS</h3>
+
+  <!-- CONNECTION MAP -->
+  <svg class="net-map" viewBox="0 0 260 120">
+    <line x1="20" y1="20" x2="130" y2="60" />
+    <line x1="130" y1="60" x2="240" y2="30" />
+    <line x1="130" y1="60" x2="80" y2="100" />
+  </svg>
+
+  <!-- NODES -->
+  <div class="nodes">
+    <span class="node n1"></span>
+    <span class="node n2"></span>
+    <span class="node n3"></span>
+    <span class="node n4"></span>
+  </div>
+
+  <!-- SCAN LOG -->
+  <div class="network-logs" id="networkLogs"></div>
+</div>
+
+  <!-- HUD RINGS -->
+  <div class="ring ring1"></div>
+  <div class="ring ring2"></div>
+  <div class="ring ring3"></div>
+<!-- FACE SCAN GRID -->
+<div class="face-scan">
+
+  <!-- GRID -->
+  <div class="grid"></div>
+
+  <!-- SCAN LINE -->
+  <div class="scan-beam"></div>
+
+  <!-- TARGET POINTS -->
+  <span class="point p1"></span>
+  <span class="point p2"></span>
+  <span class="point p3"></span>
+
+  <!-- STATUS -->
+  <div class="scan-status">ANALYZING FACE...</div>
+
+</div>
+
+  <!-- RADAR SWEEP -->
+  <div class="radar"></div>
+
+  <!-- MAIN TEXT -->
+  <h1 class="title">OBSERVER‑7</h1>
+  <p id="system-text"></p>
+
+  <!-- DATA BARS -->
+  <div class="data left">
+    <span>CPU 98%</span>
+    <span>MEM 87%</span>
+    <span>LINK STABLE</span>
+  </div>
+
+  <div class="data right">
+    <span>SCAN READY</span>
+    <span>HUD ACTIVE</span>
+    <span>PROTOCOL OK</span>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
